@@ -1,0 +1,13 @@
+export { default as SliderButton } from "./slider/SliderButton";
+export { default as Slider } from "./slider/Slider";
+export { default as SliderItem } from "./slider/SliderItem";
+export { default as LikeButton } from "./info/LikeButton";
+export { default as Switch } from "./info/Switch";
+export { default as AddToCartButton } from "./info/AddToCartButton";
+export { default as PriceBar } from "./info/PriceBar";
+export { default as DeliveryBar } from "./info/DeliveryBar";
+export { default as Controls } from "./info/Controls";
+export { default as Characteristics } from "./info/Characteristics";
+export { default as Description } from "./info/Description";
+export { default as Content } from "./Content";
+export { default as Heading } from "./Heading";
