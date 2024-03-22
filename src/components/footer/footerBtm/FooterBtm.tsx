@@ -32,7 +32,7 @@ const FooterBtm = () => {
 				<li className="flex items-center gap-2 hover:opacity-80 active:scale-95">
 					<img src="/icons/youtube.png" alt="youtube icon png" />
 					<a
-						href="#"
+						href="https://www.youtube.com"
 						className="text-custom-blue-dark text-base font-gotham-medium max-xl:text-sm max-sm:text-xs">
 						Мы на YouTube
 					</a>
