@@ -5,6 +5,7 @@ const FooterBtm = () => {
 				<li className="flex items-center gap-2 hover:opacity-80 active:scale-95">
 					<img src="/icons/blank.png" alt="blank icon png" />
 					<a
+						target="_blank"
 						href="#"
 						className="text-custom-grey-blue text-base font-gotham-medium max-xl:text-sm max-sm:text-xs">
 						PDF презентация
@@ -14,6 +15,7 @@ const FooterBtm = () => {
 				<li className="flex items-center gap-2 hover:opacity-80 active:scale-95">
 					<img src="/icons/camera.png" alt="camera icon png" />
 					<a
+						target="_blank"
 						href="#"
 						className="text-custom-grey-blue text-base font-gotham-medium max-xl:text-sm max-sm:text-xs">
 						Видео инструкция
@@ -23,6 +25,7 @@ const FooterBtm = () => {
 				<li className="flex items-center gap-2 hover:opacity-80 active:scale-95">
 					<img src="/icons/attention.png" alt="attention icon png" />
 					<a
+						target="_blank"
 						href="#"
 						className="text-custom-grey-blue text-base font-gotham-medium max-xl:text-sm max-sm:text-xs">
 						FAQ
@@ -32,6 +35,7 @@ const FooterBtm = () => {
 				<li className="flex items-center gap-2 hover:opacity-80 active:scale-95">
 					<img src="/icons/youtube.png" alt="youtube icon png" />
 					<a
+						target="_blank"
 						href="https://www.youtube.com"
 						className="text-custom-blue-dark text-base font-gotham-medium max-xl:text-sm max-sm:text-xs">
 						Мы на YouTube
@@ -40,6 +44,7 @@ const FooterBtm = () => {
 
 				<li className="hover:opacity-80 active:scale-95">
 					<a
+						target="_blank"
 						href="#"
 						className="text-custom-grey-blue text-base font-gotham-medium max-xl:text-sm max-sm:text-xs">
 						Политика конфиденциальности{" "}
@@ -57,6 +62,7 @@ const FooterBtm = () => {
 			</p>
 
 			<a
+				target="_blank"
 				href="#"
 				className="flex justify-center items-center gap-6 hover:opacity-80 active:scale-95">
 				<img src="/icons/colorLessLogo.png" alt="compo logo png" />
