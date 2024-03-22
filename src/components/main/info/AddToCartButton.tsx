@@ -1,23 +1,25 @@
-import { MouseEvent, useContext } from "react";
-import { CounterContext } from "../../context/CounterProvider";
+import { MouseEvent } from "react";
+import { T_sliderItem } from "../../../../types";
+import { selectProducts, setCount } from "../../../redux/features/slider/sliderSlice";
+import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
 
 const AddToCartButton = () => {
-	const { state, dispatch } = useContext(CounterContext);
+	const dispatch = useAppDispatch();
+	const products = useAppSelector(selectProducts);
 
-	function handleClick(e: MouseEvent<HTMLButtonElement>) {
+	function handleAddToCartClick(e: MouseEvent<HTMLButtonElement>, activeProduct: T_sliderItem) {
 		e.stopPropagation();
-
 		const target = e.target as HTMLButtonElement;
 
 		if (target.dataset.name) {
-			dispatch({ type: target.dataset.name });
+			dispatch(setCount({ action: target.dataset.name, activeProduct }));
 		}
 	}
 
-	if (state.count === 0) {
+	if (products[0].count === 0) {
 		return (
 			<button
-				onClick={(e) => handleClick(e)}
+				onClick={(e) => handleAddToCartClick(e, products[0])}
 				type="button"
 				data-name="increment"
 				className="w-64 h-16 flex justify-center items-center gap-3 bg-custom-blue-dark rounded-lg shadow hover:opacity-80 active:scale-[0.99] max-xl:h-14 max-xl:gap-2 max-xl:grow">
@@ -32,17 +34,17 @@ const AddToCartButton = () => {
 	return (
 		<div className="w-64 h-16 p-2 flex justify-between items-center bg-custom-white rounded-lg shadow-xl border-[3px] border-custom-blue-dark max-xl:h-14 max-xl:grow">
 			<button
-				onClick={(e) => handleClick(e)}
+				onClick={(e) => handleAddToCartClick(e, products[0])}
 				type="button"
 				data-name="decrement"
 				className="hover:opacity-80 active:scale-95">
 				<img src="/icons/decrement.png" alt="decrement icon png" className="pointer-events-none" />
 			</button>
 
-			<span>{state.count} штуки</span>
+			<span>{products[0].count} штуки</span>
 
 			<button
-				onClick={(e) => handleClick(e)}
+				onClick={(e) => handleAddToCartClick(e, products[0])}
 				type="button"
 				data-name="increment"
 				className="hover:opacity-80 active:scale-95">

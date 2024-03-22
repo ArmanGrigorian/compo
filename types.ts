@@ -5,14 +5,19 @@ export type T_navRoute = {
 };
 
 export type T_characteristic = {
-	id: number;
 	title: string;
 	value: string;
 };
 
 export type T_sliderItem = {
 	id: number;
+	title: string;
 	url: string;
+	price: number;
+	count: number;
+	availableCount: number;
+	characteristics: T_characteristic[];
+	description: string;
 };
 
 export type T_product = {
@@ -25,12 +30,6 @@ export type T_products = {
 	categories: T_product[];
 };
 
-export interface counterState {
-	count: number;
-	price: number;
-}
-
-export interface ContextType {
-	state: counterState;
-	dispatch: React.Dispatch<{ type: string }>;
+export interface sliderState {
+	products: T_sliderItem[];
 }

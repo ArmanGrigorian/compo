@@ -35,7 +35,7 @@ const ImageMagnifier = ({ src }: { src: string }) => {
 				onMouseLeave={() => {
 					setShowMagnifier(false);
 				}}
-				alt={"sneaker-1 jpg"}
+				alt={"sneaker-1 webp"}
 			/>
 
 			<div

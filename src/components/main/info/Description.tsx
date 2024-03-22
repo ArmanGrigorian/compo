@@ -1,16 +1,15 @@
+import { selectProducts } from "../../../redux/features/slider/sliderSlice";
+import { useAppSelector } from "../../../redux/hooks";
+
 const Description = () => {
+	const products = useAppSelector(selectProducts);
+	
 	return (
 		<div className="mt-12 max-xl:mt-8 max-xl:border-t">
 			<h3 className="text-2xl text-custom-black font-gotham-medium max-xl:mt-7">Описание товара</h3>
 
 			<p className="max-w-[1104px] text-custom-black text-lg font-gotham-normal mt-6 max-xl:mt-2">
-				Создание приверженного покупателя специфицирует неопровержимый комплексный анализ ситуации.
-				CTR существенно индуцирует из ряда вон выходящий SWOT-анализ. Воздействие на потребителя
-				определяет возрастающий интеграл по поверхности, что известно даже школьникам. Отсюда
-				естественно следует, что коммуникация уравновешивает косвенный фактор коммуникации. Поле
-				направлений естественно допускает экспериментальный скачок функции, таким образом сбылась
-				мечта идиота - утверждение полностью доказано. Арифметическая прогрессия притягивает линейно
-				зависимый пул лояльных изданий.
+				{products[0].description}
 			</p>
 		</div>
 	);
