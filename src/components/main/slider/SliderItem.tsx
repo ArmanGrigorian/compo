@@ -1,8 +1,16 @@
 import { T_sliderItem } from "../../../../types";
+import { setActiveProduct } from "../../../redux/features/slider/sliderSlice";
+import { useAppDispatch } from "../../../redux/hooks";
 
 const SliderItem = (item: T_sliderItem) => {
+	const dispatch = useAppDispatch();
+
+	function handleSliderClick() {
+		dispatch(setActiveProduct(item.id.toString()));
+	}
+
 	return (
-		<li className="w-16 h-16 max-sm:w-12 max-sm:h-12">
+		<li onClick={handleSliderClick} className="w-16 h-16 max-sm:w-12 max-sm:h-12">
 			<img
 				tabIndex={0}
 				src={item.url}

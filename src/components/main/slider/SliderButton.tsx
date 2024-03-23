@@ -17,7 +17,6 @@ const SliderButton = ({ right }: { right: boolean }) => {
 	return (
 		<button
 			onClick={handleSliderClick}
-			title={right ? "Следующий слайд" : "Предыдущий слайд"}
 			type="button"
 			data-name={right ? "next" : "prev"}
 			className="flex justify-center items-center w-10 h-16 bg-custom-blue-light rounded shadow hover:opacity-80 active:scale-90 max-sm:w-7 max-sm:h-12">

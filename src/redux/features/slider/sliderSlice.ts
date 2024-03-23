@@ -21,6 +21,16 @@ export const sliderSlice = createSlice({
 			} else if (payload === "prev") {
 				const [last, ...rest] = state.products.reverse();
 				state.products = [last, ...rest.reverse()];
+			} else {
+				const currentIdx = state.products.findIndex((product) => product.id === Number(payload));
+				const currentProduct = state.products.find((product) => product.id === Number(payload));
+				
+				if (!currentProduct) return;
+				
+				const firstPart = state.products.slice(0, currentIdx);
+				const lastPart = state.products.slice(currentIdx + 1);
+
+				state.products = [currentProduct, ...firstPart, ...lastPart];
 			}
 		},
 		setCount: (
