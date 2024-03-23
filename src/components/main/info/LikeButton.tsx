@@ -6,6 +6,7 @@ const LikeButton = ({ extended }: { extended: boolean }) => {
 	return (
 		<button
 			onClick={() => setIsLiked(!isLiked)}
+			title="Добавить в избранное"
 			className={`${
 				extended && "bg-custom-blue-light p-4 rounded-lg shadow"
 			} hover:opacity-80 active:scale-95`}>

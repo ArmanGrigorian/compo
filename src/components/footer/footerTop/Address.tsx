@@ -4,6 +4,7 @@ const Address = () => {
 			<div className="flex flex-col gap-2 max-xl:gap-1">
 				<a
 					href="tel:88008419595"
+					title="Служба поддержки"
 					className="not-italic text-custom-black dark:text-custom-white text-base font-gotham-bold max-sm:text-xs">
 					8 800 841-95-95
 				</a>
@@ -15,6 +16,7 @@ const Address = () => {
 			<div className="flex flex-col gap-2 max-xl:gap-1">
 				<a
 					href="mailto:support@sport.ru"
+					title="Служба поддержки"
 					className="not-italic text-custom-black dark:text-custom-white text-base font-gotham-bold max-sm:text-xs">
 					support@sport.ru
 				</a>

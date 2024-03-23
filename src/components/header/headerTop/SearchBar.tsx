@@ -15,11 +15,11 @@ const SearchBar = ({ mobileView }: { mobileView: boolean }) => {
 			/>
 
 			<div className="absolute right-3 flex justify-center items-center gap-3">
-				<button type="reset" className="hover:opacity-80 active:scale-90">
+				<button type="reset" title="Сбросить поиск" className="hover:opacity-80 active:scale-90">
 					<img src="/icons/x.png" alt="x icon png" />
 				</button>
 
-				<button type="submit" className="hover:opacity-80 active:scale-90">
+				<button type="submit" title="Поиск" className="hover:opacity-80 active:scale-90">
 					<img src="/icons/magnifier.png" alt="magnifier icon png" />
 				</button>
 			</div>

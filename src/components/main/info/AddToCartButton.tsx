@@ -21,6 +21,7 @@ const AddToCartButton = () => {
 			<button
 				onClick={(e) => handleAddToCartClick(e, products[0])}
 				type="button"
+				title="Добавить в корзину"
 				data-name="increment"
 				className="w-64 h-16 flex justify-center items-center gap-3 bg-custom-blue-dark rounded-lg shadow hover:opacity-80 active:scale-[0.99] max-xl:h-14 max-xl:gap-2 max-xl:grow">
 				<img src="/icons/cartWhite.png" alt="cart icon png" className="pointer-events-none" />
@@ -36,6 +37,7 @@ const AddToCartButton = () => {
 			<button
 				onClick={(e) => handleAddToCartClick(e, products[0])}
 				type="button"
+				title="Уменьшить количество"
 				data-name="decrement"
 				className="hover:opacity-80 active:scale-95">
 				<img src="/icons/decrement.png" alt="decrement icon png" className="pointer-events-none" />
@@ -46,6 +48,7 @@ const AddToCartButton = () => {
 			<button
 				onClick={(e) => handleAddToCartClick(e, products[0])}
 				type="button"
+				title="Увеличить количество"
 				data-name="increment"
 				className="hover:opacity-80 active:scale-95">
 				<img src="/icons/increment.png" alt="increment icon png" className="pointer-events-none" />

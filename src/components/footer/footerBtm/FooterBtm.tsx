@@ -2,7 +2,9 @@ const FooterBtm = () => {
 	return (
 		<div className="flex flex-col gap-10 py-12">
 			<ul className="flex justify-center items-center gap-7 max-lg:flex-col">
-				<li className="flex items-center gap-2 hover:opacity-80 active:scale-95">
+				<li
+					title="PDF презентация"
+					className="flex items-center gap-2 hover:opacity-80 active:scale-95">
 					<img src="/icons/blank.png" alt="blank icon png" />
 					<a
 						target="_blank"
@@ -12,7 +14,9 @@ const FooterBtm = () => {
 					</a>
 				</li>
 
-				<li className="flex items-center gap-2 hover:opacity-80 active:scale-95">
+				<li
+					title="Видео инструкция"
+					className="flex items-center gap-2 hover:opacity-80 active:scale-95">
 					<img src="/icons/camera.png" alt="camera icon png" />
 					<a
 						target="_blank"
@@ -22,7 +26,7 @@ const FooterBtm = () => {
 					</a>
 				</li>
 
-				<li className="flex items-center gap-2 hover:opacity-80 active:scale-95">
+				<li title="FAQ" className="flex items-center gap-2 hover:opacity-80 active:scale-95">
 					<img src="/icons/attention.png" alt="attention icon png" />
 					<a
 						target="_blank"
@@ -32,7 +36,9 @@ const FooterBtm = () => {
 					</a>
 				</li>
 
-				<li className="flex items-center gap-2 hover:opacity-80 active:scale-95">
+				<li
+					title="Мы на YouTube"
+					className="flex items-center gap-2 hover:opacity-80 active:scale-95">
 					<img src="/icons/youtube.png" alt="youtube icon png" />
 					<a
 						target="_blank"
@@ -42,7 +48,7 @@ const FooterBtm = () => {
 					</a>
 				</li>
 
-				<li className="hover:opacity-80 active:scale-95">
+				<li title="Политика конфиденциальности" className="hover:opacity-80 active:scale-95">
 					<a
 						target="_blank"
 						href="#"
@@ -63,6 +69,7 @@ const FooterBtm = () => {
 
 			<a
 				target="_blank"
+				title="Разработка платформы"
 				href="#"
 				className="flex justify-center items-center gap-6 hover:opacity-80 active:scale-95">
 				<img src="/icons/colorLessLogo.png" alt="compo logo png" />

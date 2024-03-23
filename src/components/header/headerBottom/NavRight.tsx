@@ -3,7 +3,9 @@ import { PercentIcon } from "../../svg";
 const NavRight = () => {
 	return (
 		<ul className="flex items-center gap-6 max-xl:gap-2">
-			<li className="flex justify-center items-center gap-2 px-3 py-2 bg-custom-blue-light rounded shadow hover:opacity-80 active:scale-95">
+			<li
+				title="Ваш менеджер"
+				className="flex justify-center items-center gap-2 px-3 py-2 bg-custom-blue-light rounded shadow hover:opacity-80 active:scale-95">
 				<img
 					src="/icons/communication.png"
 					alt="communication icon png"
@@ -16,7 +18,9 @@ const NavRight = () => {
 				</a>
 			</li>
 
-			<li className="group px-3 py-2 rounded flex justify-center items-center gap-4 hover:shadow hover:bg-custom-blue-light  active:scale-95">
+			<li
+				title="Акции"
+				className="group px-3 py-2 rounded flex justify-center items-center gap-4 hover:shadow hover:bg-custom-blue-light  active:scale-95">
 				<PercentIcon />
 				<a
 					href="#"
@@ -25,7 +29,9 @@ const NavRight = () => {
 				</a>
 			</li>
 
-			<li className="group px-3 py-2 rounded hover:shadow hover:bg-custom-blue-light active:scale-95">
+			<li
+				title="Блог"
+				className="group px-3 py-2 rounded hover:shadow hover:bg-custom-blue-light active:scale-95">
 				<a
 					href="#"
 					className="text-custom-blue-dark dark:text-custom-white dark:group-hover:text-custom-blue-dark text-sm font-gotham-pro font-semibold">

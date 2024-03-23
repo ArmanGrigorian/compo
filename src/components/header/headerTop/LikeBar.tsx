@@ -4,7 +4,7 @@ const LikeBar = () => {
 	return (
 		<div className="flex items-center max-xsm:hidden">
 			<div className="border-r-2 pr-6 max-xl:pr-3">
-				<button type="button" className="hover:opacity-80 active:scale-95">
+				<button type="button" title="Уведомления" className="hover:opacity-80 active:scale-95">
 					<img
 						src="/icons/bell.png"
 						alt="bell icon png"
