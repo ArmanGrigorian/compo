@@ -28,14 +28,15 @@ const ImageMagnifier = ({ src }: { src: string }) => {
 					const elem = e.currentTarget;
 					const { top, left } = elem.getBoundingClientRect();
 
-					const x = e.pageX - left - window.screenX;
-					const y = e.pageY - top - window.scrollY;
+					const x = e.pageX - left - window.pageXOffset;
+					const y = e.pageY - top - window.pageYOffset;
+
 					setXY([x, y]);
 				}}
 				onMouseLeave={() => {
 					setShowMagnifier(false);
 				}}
-				alt={"sneaker-1 webp"}
+				alt="sneaker webp"
 			/>
 
 			<div
