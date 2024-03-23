@@ -11,7 +11,7 @@ const Heading = () => {
 				Каталог / Обувь / Кроссовки / Беговые
 			</p>
 
-			<h1 className="pt-4 pb-8 text-custom-black text-4xl font-gotham-pro font-semibold max-lg:text-3xl max-sm:text-2xl">
+			<h1 className="pt-4 pb-8 text-custom-black dark:text-custom-white text-4xl font-gotham-pro font-semibold max-lg:text-3xl max-sm:text-2xl">
 				Кроссовки мужские {products[0].title}
 			</h1>
 		</>

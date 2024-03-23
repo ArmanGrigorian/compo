@@ -19,7 +19,7 @@ const PriceBar = () => {
 			</p>
 
 			<div className="flex items-center gap-4">
-				<strong className="text-custom-black text-3xl font-gotham-bold">
+				<strong className="text-custom-black dark:text-custom-white text-3xl font-gotham-bold">
 					{Number(
 						((products[0].count === 0 ? 1 : products[0].count) * products[0].price).toFixed(2),
 					)}{" "}
@@ -32,9 +32,11 @@ const PriceBar = () => {
 			</div>
 
 			<div className="flex items-center gap-4">
-				<span>{products[0].count} штук в уп.</span>
+				<span className="text-custom-black  dark:text-custom-white text-sm font-gotham-normal">
+					{products[0].count} штук в уп.
+				</span>
 				<Switch />
-				<span>Заказ упаковкой</span>
+				<span className="text-custom-black dark:text-custom-white text-sm font-gotham-normal">Заказ упаковкой</span>
 			</div>
 		</div>
 	);

@@ -3,7 +3,7 @@ import { HeaderTop, Nav } from ".";
 
 const Header = () => {
 	return (
-		<header>
+		<header className="bg-custom-white dark:bg-custom-black">
 			<HeaderTop />
 			<Nav />
 		</header>
