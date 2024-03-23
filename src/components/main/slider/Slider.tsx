@@ -7,7 +7,8 @@ const Slider = () => {
 	const products = useAppSelector(selectProducts);
 
 	return (
-		<div className="flex flex-col gap-8 w-[400px] max-lg:w-1/2 max-lg:mx-auto max-sm:w-[90%]">
+		<div
+			className="flex flex-col gap-8 w-[400px] max-lg:w-1/2 max-lg:mx-auto max-sm:w-[90%]">
 			<Magnifier src={products[0].url} />
 
 			<div className="flex items-center gap-3 max-lg:w-full max-lg:justify-center">
